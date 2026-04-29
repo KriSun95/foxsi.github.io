@@ -78,11 +78,12 @@
 									const FILENAME = "foxsi5.txt";
 
 									function fetchLetter() {
-										fetch(`https://gist.githubusercontent.com/dannysun91/${GIST_ID}/raw/${FILENAME}?cache=${Date.now()}`)
-										.then(res => res.text())
-										.then(text => {
+										fetch(`https://api.github.com/gists/${GIST_ID}`)
+											.then(res => res.json())
+											.then(data => {
+											const text = data.files[FILENAME].content;
 											document.getElementById("my-letter").textContent = text.trim();
-										});
+											});
 									}
 
 									fetchLetter();                  // run immediately on load
