@@ -68,10 +68,26 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">Updated: Mar. 18, 2026, 15:52:11 UTC</span>
+									<span class="date">Updated: Apr. 29, 2026, 17:06:35 UTC</span>
 									<h1><span id="curr_date"></span><br />
 									Launch Plan</h1>
-									<p>Some description of the plan and then can have an image(s).</p>
+									<span id="my-letter">B</span>
+
+									<script>
+									const GIST_ID = "fce9b41b568ed17aa79d06b7c613a260";
+									const FILENAME = "foxsi5.txt";
+
+									function fetchLetter() {
+										fetch(`https://gist.githubusercontent.com/dannysun91/${GIST_ID}/raw/${FILENAME}?cache=${Date.now()}`)
+										.then(res => res.text())
+										.then(text => {
+											document.getElementById("my-letter").textContent = text.trim();
+										});
+									}
+
+									fetchLetter();                  // run immediately on load
+									setInterval(fetchLetter, 1000); // then every 5 seconds
+									</script>
 								</header>
 								<!-- Table -->
 									<h2>Today's Planned Potential Targets</h2>
@@ -106,7 +122,7 @@
 								</header>
 
 								<h2>Solar Continuum</h2>	
-								<div class="image main"><img src="/foxsi5/foxsi5_launch_days/foxsi5_daily_continuum/HMI_CONT_IMAGE_2026-04-27T183441.png" alt="" /></div>
+								<div class="image main"><img src='/foxsi5/foxsi5_launch_days/foxsi5_daily_continuum/HMI_CONT_IMAGE_2026-04-29.png' alt="" /></div>
 								<!-- <p> Can easily show images in the page directly.</p><br>
 								<div class="image-row">
 									<div class="image left"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_171.gif" alt="" /></div>

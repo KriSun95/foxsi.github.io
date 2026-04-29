@@ -1,5 +1,5 @@
-const target_file = `/foxsi5/foxsi5_launch_days/foxsi5_daily_launch_targets/targets_${m}${d}.txt`
-const notes_file = `/foxsi5/foxsi5_launch_days/foxsi5_daily_launch_targets/notes_${m}${d}.txt`
+const target_file = `/foxsi5/foxsi5_launch_days/foxsi5_daily_launch_targets/${m}${d}_targets.txt`
+const notes_file = `/foxsi5/foxsi5_launch_days/foxsi5_daily_launch_targets/${m}${d}_notes.txt`
 console.log(target_file);
 console.log(notes_file);
 
