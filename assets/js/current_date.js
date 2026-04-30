@@ -19,3 +19,4 @@ function getOrdinal(day) {
     
     
 document.getElementById('curr_date').textContent = `${month} ${day}, ${y}`;
+document.getElementById('hmi-img').src = `/foxsi5/foxsi5_launch_days/foxsi5_daily_continuum/HMI_CONT_IMAGE_2026-${m}-${d}.png`;
