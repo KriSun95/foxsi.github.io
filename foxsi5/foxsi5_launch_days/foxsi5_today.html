@@ -71,25 +71,11 @@
 									<span class="date">Updated: Apr. 29, 2026, 17:06:35 UTC</span>
 									<h1><span id="curr_date"></span><br />
 									Launch Plan</h1>
-									<span id="my-letter"></span>
 
-									<script>
-									const GIST_ID = "fce9b41b568ed17aa79d06b7c613a260";
-									const FILENAME = "foxsi5.txt";
-
-									function fetchLetter() {
-										fetch(`https://api.github.com/gists/${GIST_ID}`)
-											.then(res => res.json())
-											.then(data => {
-											const text = data.files[FILENAME].content;
-											document.getElementById("my-letter").textContent = text.trim();
-											});
-									}
-
-									fetchLetter();                  // run immediately on load
-									setInterval(fetchLetter, 1000); // then every 5 seconds
-									</script>
 								</header>
+									<h2>Live Target</h2>
+									<h3>Picking up count: <span id="picking-up-count"></span></h3>
+									<h3>Live Target: <span id="my-letter"></span></h3>
 								<!-- Table -->
 									<h2>Today's Planned Potential Targets</h2>
 									<p>These targets are ordered such that the primary <em>pre-launch</em> FOXSI-5 target is at the top (ID: &alpha;) then with decreasing likelihood decided by the team.</p>
@@ -167,6 +153,7 @@
 
 		<!-- Scripts -->
 		 	<script src="/assets/js/current_date.js"></script>
+			<script src="/assets/js/live_target.js"></script>
 			<script src="/assets/js/launch_target_table.js"></script>
 			<script src="/assets/js/jquery.min.js"></script>
 			<script src="/assets/js/jquery.scrollex.min.js"></script>
