@@ -18,6 +18,7 @@ Promise.all([
         const [id, note] = notes[i].split("|");  // matching line by index
         
         const tr = document.createElement('tr');
+        tr.id = `row-${id}`;
         tr.innerHTML = `
             <td>${id}</td>
             <td>${ARnumber}</td>

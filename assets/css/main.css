@@ -3123,6 +3123,10 @@ input, select, textarea {
 			background-color: rgba(220, 220, 220, 0.25);
 		}
 
+	table tbody tr.select{
+		background-color: rgba(229, 183, 18, 0.789);
+	}
+
 	table th {
 		color: #212931;
 	}
