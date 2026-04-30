@@ -74,6 +74,17 @@ input, select, textarea {
 
 /* Basic */
 
+	@keyframes shake {
+		0%, 100% { transform: translateX(0); }
+		25% { transform: translateX(-5px); }
+		75% { transform: translateX(5px); }
+	}
+
+	.shake {
+		display: inline-block;
+		animation: shake 0.3s ease infinite;
+	}
+
 	@-ms-viewport {
 		width: device-width;
 	}
