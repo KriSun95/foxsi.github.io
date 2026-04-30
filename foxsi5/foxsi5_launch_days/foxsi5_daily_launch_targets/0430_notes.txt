@@ -1,7 +1,7 @@
-Hello
-.
-World
-.
-Out
-.
-There
+A|Hello
+B|.
+C|World
+D|.
+E|Out
+F|.
+G|There

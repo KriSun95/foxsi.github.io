@@ -74,6 +74,17 @@ input, select, textarea {
 
 /* Basic */
 
+	@keyframes shake {
+		0%, 100% { transform: translateX(0); }
+		25% { transform: translateX(-5px); }
+		75% { transform: translateX(5px); }
+	}
+
+	.shake {
+		display: inline-block;
+		animation: shake 0.3s ease infinite;
+	}
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -3111,6 +3122,10 @@ input, select, textarea {
 		table tbody tr:nth-child(2n + 1) {
 			background-color: rgba(220, 220, 220, 0.25);
 		}
+
+	table tbody tr.select{
+		background-color: rgba(229, 183, 18, 0.789);
+	}
 
 	table th {
 		color: #212931;

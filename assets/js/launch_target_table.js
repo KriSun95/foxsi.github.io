@@ -13,13 +13,15 @@ Promise.all([
     const tbody = document.querySelector('tbody');
     
     targets.forEach((line, i) => {
-        const [name, position] = line.split(': ');
+        const [ARnumber, position] = line.split(': ');
         const [direction, coords] = position.split(' ')
-        const note = notes[i];  // matching line by index
+        const [id, note] = notes[i].split("|");  // matching line by index
         
         const tr = document.createElement('tr');
+        tr.id = `row-${id}`;
         tr.innerHTML = `
-            <td>${name}</td>
+            <td>${id}</td>
+            <td>${ARnumber}</td>
             <td>${direction}<br>${coords}</td>
             <td>${note}</td>
             `;
