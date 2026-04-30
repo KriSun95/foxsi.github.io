@@ -1,6 +1,6 @@
 const GIST_ID = "fce9b41b568ed17aa79d06b7c613a260";
 const FILENAME = "foxsi5.txt";
-const TOKEN = "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";
+const TOKEN = "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";
 
 function fetchLetter() {
     fetch(`https://api.github.com/gists/${GIST_ID}`, {
