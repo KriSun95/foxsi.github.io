@@ -1,6 +1,6 @@
 A|.
-B| Primary Target
-C|.
+B|.
+C|Primary Target
 D|.
 E|.
 F|.
