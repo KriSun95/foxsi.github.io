@@ -14,7 +14,7 @@ Promise.all([
     
     targets.forEach((line, i) => {
         const [ARnumber, position] = line.split(': ');
-        const [direction, coords] = position.split(' ')
+        const coords = position
         const [id, note] = notes[i].split("|");  // matching line by index
         
         const tr = document.createElement('tr');
@@ -22,7 +22,7 @@ Promise.all([
         tr.innerHTML = `
             <td>${id}</td>
             <td>${ARnumber}</td>
-            <td>${direction}<br>${coords}</td>
+            <td>${coords}</td>
             <td>${note}</td>
             `;
         tbody.appendChild(tr);
