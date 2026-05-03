@@ -56,6 +56,10 @@
 								<!-- ADD MORE DAYS HERE WITH COPIES OF "foxsi5_launch_days/foxsi5_20260501.html"-->
 								<!-- REMEMBER TO UPDATE THIS LIST ON EACH PAGE. NEWEST AT THE TOP? -->
 								 
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/06</a></li>
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/05</a></li>
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/04</a></li>
+								<li><a href="foxsi5_20260501.html" class="button">2026/05/03</a></li>
 								<li><a href="foxsi5_20260502.html" class="button active">2026/05/02</a></li>
 								<li><a href="foxsi5_20260501.html" class="button">2026/05/01</a></li>
 							</ul>
@@ -68,25 +72,31 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">Updated: Feb. 27, 2026, 21:10:11 UTC</span>
-									<h1>2026 May 2nd<br />
+									
+									<h1>2026 May 2st<br />
 									Launch Plan</h1>
-									<p>Some description of the plan and then can have an image(s).</p>
+									<span class="date">Updated: May. 03, 2026, 00:20 UTC</span>
+									<!-- <p>Some description of the plan and then can have an image(s).</p> -->
 								</header>
 								<!-- Table -->
-									<h2>Today's Planned Potential Targets</h2>
-									<p>These targets are ordered such that the primary <em>pre-launch</em> FOXSI-5 target is at the top (ID: &alpha;) then with decreasing likelihood decided by the team.</p>
+									<h2>Planned Potential Targets</h2>
+									<p>The primary FOXSI-5 target is indicated in the "Description" column below.</p>
+									<ul>
+										<li>Launch window is 19:15 UTC to 00:15 UTC for May 1.</li>
+									</ul>
+									<p>These target coordinates are calculated for the opening of the launch window for each day.</p>
 									<div class="table-wrapper">
 										<table>
 											<thead>
 												<tr>
 													<th>Target ID</th>
-													<th>Coordinates (Solar-X,-Y)</th>
+													<th>AR Number</th>
+													<th>Coordinates (X, Y) at Start of<br>Launch Window (~19:15UTC)</th>
 													<th>Description</th>
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<!-- <tr>
 													<td>&alpha;</td>
 													<td>(100&#8243;, 400&#8243;)</td>
 													<td>Quiet but complex looking AR</td>
@@ -95,18 +105,31 @@
 													<td>&beta;</td>
 													<td>(-125&#8243;, 150&#8243;)</td>
 													<td>AR with lots of recent activity</td>
-												</tr>
+												</tr> -->
 											</tbody>
 										</table>
 									</div>
-								<h2>Auxiliary Information</h2>	
+								<!-- <h2>Auxiliary Information</h2>	
 								<p>Now onto some of the details and in-depth images? Perhaps link a planning document?</p>
 								<header class="major">
 									<a class="button" href="foxsi5_updates/foxsi5_planning_doc_example.pdf" target="_blank">Full Planning Document</a>
-								</header>
-								<p> Can easily show images in the page directly.</p>
-								<div class="image main"><img src="foxsi5_updates/pointing_filler_image.png" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
+								</header> -->
+
+								<h2>Solar Continuum</h2>	
+								<div class="image main"><img id="hmi-img" alt="" /></div>
+								<!-- <p> Can easily show images in the page directly.</p><br>
+								<div class="image-row">
+									<div class="image left"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_171.gif" alt="" /></div>
+									<div class="image right"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_193.gif" alt="" /></div>
+								</div>
+								<div class="image-row">
+									<div class="image left"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_211.gif" alt="" /></div>
+									<div class="image right"><img src="https://umbra.nascom.nasa.gov/images/latest_aia_304.gif" alt="" /></div>
+								</div> -->
+								<br>
+								
+								<h2>PFRR Livestream</h2>
+								<iframe width=100% style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/M5Q8ubn7F1U?si=H9Qwx5FMg2s7GmbB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</section>
 
 					</div>
@@ -136,7 +159,12 @@
 			</div>
 
 		<!-- Scripts -->
-		 	<script src="/assets/js/current_date.js"></script>
+			<script>
+				const m = "05"
+				const d = "02"
+			</script>
+			<script src="/assets/js/live_target.js"></script>
+			<script src="/assets/js/launch_target_table.js"></script>
 			<script src="/assets/js/jquery.min.js"></script>
 			<script src="/assets/js/jquery.scrollex.min.js"></script>
 			<script src="/assets/js/jquery.scrolly.min.js"></script>
