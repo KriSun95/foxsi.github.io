@@ -4,8 +4,12 @@ console.log(target_file);
 console.log(notes_file);
 
 Promise.all([
-    fetch(target_file).then(res => res.text()),
-    fetch(notes_file).then(res => res.text())
+    fetch(target_file).then(res => res.text()).catch(error => {
+                    throw(error);
+                }),
+    fetch(notes_file).then(res => res.text()).catch(error => {
+                    throw(error);
+                })
 ])
 .then(([targetText, notesText]) => {
     const targets = targetText.trim().split('\n');
