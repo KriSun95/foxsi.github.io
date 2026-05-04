@@ -4,14 +4,11 @@ console.log(target_file);
 console.log(notes_file);
 
 Promise.all([
-    fetch(target_file).then(res => res.text()).catch(error => {
-                    throw(error);
-                }),
-    fetch(notes_file).then(res => res.text()).catch(error => {
-                    throw(error);
-                })
+    fetch(target_file).then(res => res.ok ? res.text() : null).catch(() => null),
+    fetch(notes_file).then(res => res.ok ? res.text() : null).catch(() => null)
 ])
 .then(([targetText, notesText]) => {
+    if (!targetText || !notesText) return;
     const targets = targetText.trim().split('\n');
     const notes = notesText.trim().split('\n');
     const tbody = document.querySelector('tbody');
