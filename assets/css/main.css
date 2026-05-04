@@ -2111,7 +2111,7 @@ input, select, textarea {
 		letter-spacing: 0.075em;
 		height: 3rem;
 		line-height: 3rem;
-		padding: 0 2rem;
+		padding: 0 .5rem;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
