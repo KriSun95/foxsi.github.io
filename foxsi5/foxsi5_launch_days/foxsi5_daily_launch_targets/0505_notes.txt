@@ -1,7 +1,7 @@
 A|.
 B|.
-C|Primary Target
+C|.
 D|.
 E|.
-F|.
+F|Primary Target
 G|.
